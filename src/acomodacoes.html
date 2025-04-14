@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acomodações - Hotel Paulinho</title>
+    <link rel="stylesheet" href="css/acomodacoes.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="js/acomodacoes.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <div id="slide">
+            <a href="index.html" aria-label="Página inicial">
+                <img src="images/2.png" alt="Slide de Acomodações">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav role="navigation" aria-label="Menu principal">
+            <ul id="main" class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acomodacoes.html" class="active">Acomodações</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="item">
+            <img src="images/single.png" alt="Quarto Single" loading="lazy">
+            <p>Quartos Single com uma cama de solteiro. Com opção de vista para o mar e Rio Tramandaí. Equipados com ventiladores de teto, TV, frigobar e Wi-Fi.</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/single1.png" alt="Quarto Single 1" class="active" loading="lazy">
+                    <img src="images/single2.png" alt="Quarto Single 2" loading="lazy">
+                    <img src="images/single3.png" alt="Quarto Single 3" loading="lazy">
+                    <img src="images/single4.png" alt="Quarto Single 4" loading="lazy">
+                    <img src="images/single5.png" alt="Quarto Single 5" loading="lazy">
+                </div>
+                <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </section>
+
+        <section class="item">
+            <img src="images/casal.png" alt="Quarto Casal" loading="lazy">
+            <p>Quartos de casal com cama de casal e cama de solteiro auxiliar. Com opção de vista para o mar e Rio Tramandaí. Equipados com ventiladores de teto, TV, frigobar, Wi-Fi. Opção com ar condicionado.</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/casal1.png" alt="Quarto Casal 1" class="active" loading="lazy">
+                    <img src="images/casal2.png" alt="Quarto Casal 2" loading="lazy">
+                    <img src="images/casal3.png" alt="Quarto Casal 3" loading="lazy">
+                    <img src="images/casal4.png" alt="Quarto Casal 4" loading="lazy">
+                    <img src="images/casal5.png" alt="Quarto Casal 5" loading="lazy">
+                </div>
+                <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </section>
+
+        <section class="item">
+            <img src="images/quadruplo.png" alt="Quarto Quádruplo" loading="lazy">
+            <p>Quartos Quádruplos com dois beliches. Sem opção com vista para o mar e Rio Tramandaí. Equipados com ventiladores de teto, TV, frigobar e Wi-Fi.</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/quadruplo1.png" alt="Quarto Quádruplo 1" class="active" loading="lazy">
+                    <img src="images/quadruplo2.png" alt="Quarto Quádruplo 2" loading="lazy">
+                    <img src="images/quadruplo3.png" alt="Quarto Quádruplo 3" loading="lazy">
+                    <img src="images/quadruplo4.png" alt="Quarto Quádruplo 4" loading="lazy">
+                </div>
+                <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Hotel Paulinho. Todos os direitos reservados.</p>
+
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
