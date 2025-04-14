@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Paulinho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <div id="slide">
+            <a href=index.html aria-label="Página inicial">
+                <img src="images/1.png" alt="Hotel Paulinho - Vista do hotel">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav role="navigation" aria-label="Menu principal">
+            <ul id="main" class="desktop-menu">
+                <li><a href=index.html class="active">Home</a></li>
+                <li><a href=acomodacoes.html>Acomodações</a></li>
+                <li><a href="estrutura">Estrutura</a></li>
+                <li><a href="localizacao">Localização</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="item">
+            <img src="images/acomodacoes.png" alt="Quartos do Hotel">
+            <p>O Hotel Paulinho possui quartos Single, de casal, triplos e quádruplos. Com vista para o mar e Rio
+                Tramandaí e ar condicionado. Equipados com ventiladores de teto, TV, frigobar e Wi-Fi.</p>
+            <a href="acomodacoes" class="more">Saiba mais</a>
+        </section>
+
+        <section class="item">
+            <img src="images/estrutura.png" alt="Estrutura do hotel">
+            <p>Sala de jogos, área de leitura, piscina adulta e infantil, Wi-Fi, salão para café da manhã, bar e
+                estacionamento fechado.</p>
+            <a href="estrutura" class="more">Ver estrutura</a>
+        </section>
+
+        <section class="item">
+            <img src="images/localizacao.png" alt="Localização">
+            <p>Na beira do Rio Tramandaí, em Imbé/RS. Ideal para esportes aquáticos, pesca e turismo. Perto da barra,
+                restaurantes e bares.</p>
+            <a href="localizacao" class="more">Ver localização</a>
+        </section>
+    </main>
+
+    <!-- Seção sobre a localização e estrutura do hotel -->
+    <section class="about">
+        <h2>Uma excelente localização</h2>
+        <p>
+            Uma excelente localização e uma estrutura totalmente voltada para o lazer, garantem ao hóspede não só estar
+            no centro da cidade e perto do mar, mas também no centro das atenções.
+            Venha para o Hotel Paulinho e descubra a vida em qualquer época do ano!
+        </p>
+    </section>
+
+    <!-- Seção de distâncias -->
+    <section class="distances">
+        <h2>Distâncias importantes</h2>
+        <ul>
+            <li><strong>Torres:</strong> 45 km</li>
+            <li><strong>Porto Alegre:</strong> 120 km</li>
+            <li><strong>Chuí:</strong> 550 km</li>
+            <li><strong>Uruguaiana:</strong> 700 km</li>
+        </ul>
+    </section>
+
+<!--    <section id="contato">-->
+<!--        <h2>Contato com o Hotel Paulinho</h2>-->
+<!--        <p>Entre em contato conosco através dos telefones e/ou através do e-mail abaixo:</p>-->
+<!--        <p><strong>Endereço:</strong> Av. Rio Grande, 1060 - Imbé/RS</p>-->
+<!--        <p><strong>Telefones:</strong> (51) 3627.1209 / (51) 3627.3330</p>-->
+<!--        <p><strong>E-mail:</strong> <a href="mailto:reservashotelpaulinho@gmail.com">reservashotelpaulinho@gmail.com</a>-->
+<!--        </p>-->
+
+<!--        &lt;!&ndash; Se você deseja incluir um mapa &ndash;&gt;-->
+<!--        <h3>Localização</h3>-->
+<!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.1129773013395!2d-50.123512999999996!3d-29.976183000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9518737328ce82d1%3A0x85e5dbe7bcb57227!2sHotel%20Paulinho!5e0!3m2!1spt-BR!2sbr!4v1744295778798!5m2!1spt-BR!2sbr"-->
+<!--                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"-->
+<!--                referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--    </section>-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Hotel Paulinho. Todos os direitos reservados.</p>
+
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
