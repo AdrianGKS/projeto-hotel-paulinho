@@ -30,7 +30,7 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'adrian.gabriel.dev@gmail.com'; // Use uma senha de aplicativo se tiver 2FA habilitado
+    $mail->Username   = 'seu-email'; // Use uma senha de aplicativo se tiver 2FA habilitado
     $mail->Password   = 'sua-senha-ou-token-de-app'; // Armazene isso de forma segura
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
