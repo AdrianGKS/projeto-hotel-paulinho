@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 1rem;
+}
+
+/* Estrutura geral */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: #004080;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+#slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #003366;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0066cc;
+}
+
+/* Ícone do menu (hamburguer) */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Menu suspenso */
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Seções de texto antes do contato */
+.description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1150px;
+}
+
+.description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Seção de Contato */
+.contato {
+    padding: 20px;
+    width: 100%; /* Garantir que a seção ocupe 100% da largura */
+    max-width: 1150px;
+    margin: 20px auto;
+}
+
+.contato h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contato a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+.contato iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #004080;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+    outline: none;
+}
+
+.contato button {
+    background-color: #004080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.contato button:hover {
+    background-color: #0066cc;
+}
+.contato label + label {
+    margin-top: 1.5rem;
+}
+
+
+.footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 32px; /* Define um tamanho consistente */
+    height: 32px;
+    object-fit: contain; /* Garante que a proporção original seja mantida */
+}
+
+@media (max-width: 768px) {
+    /* Esconde o menu na versão mobile */
+    .desktop-menu {
+        display: none;
+        width: 100%;
+    }
+
+    /* Exibe o ícone de hambúrguer */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Exibe o menu suspenso quando ativo */
+    nav ul.active {
+        display: block;
+        width: 100%;
+        background-color: #003366;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+    }
+}

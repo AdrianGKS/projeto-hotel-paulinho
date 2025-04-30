@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato | Hotel Paulinho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div id="slide">
+            <a href=index.html aria-label="Contato">
+                <img src="images/1.png" alt="Hotel Paulinho - Vista do hotel">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav role="navigation" aria-label="Contato">
+            <ul id="main" class="desktop-menu">
+                <li><a href=index.html class="active">Home</a></li>
+                <li><a href=acomodacoes.html>Acomodações</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="description">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelos telefones abaixo ou através do formulário:</p>
+            <p><strong>Central de reservas:</strong> (51) 3627.1209 / 3627.3330</p>
+
+        <form method="post" class="contato">
+            <label>Nome:
+                <input type="text" name="nome" placeholder="Informe seu nome" required>
+            </label>
+            <label>E-mail:
+                <input type="email" name="email" placeholder="Informe seu e-mail" required>
+            </label>
+            <label>Telefone:
+                <input type="tel" name="tel" placeholder="Informe seu telefone para contato">
+            </label>
+            <label>Assunto:
+                <input type="text" name="assunto" placeholder="Reservas, valores, informações">
+            </label>
+            <label>Mensagem:
+                <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Hotel Paulinho. Todos os direitos reservados.</p>
+
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
