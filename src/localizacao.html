@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização - Hotel Paulinho</title>
+    <link rel="stylesheet" href="css/localizacao.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="js/carrosel.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <div id="slide">
+            <a href="index.html" aria-label="Página inicial">
+                <img src="images/4.png" alt="Slide de Localização">
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav role="navigation" aria-label="Menu principal">
+            <ul id="main" class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acomodacoes.html">Acomodações</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li>
+                <li><a href="localizacao.html" class="active">Localização</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="description">
+            <h2>Hotel Paulinho, o seu hotel em Imbé!</h2>
+            <p>O Hotel Paulinho está à beira do Rio Tramandaí, na praia do Imbé/RS, palco da diária dança dos botos,
+                da pesca da sardinha e da prática de diversos esportes aquáticos. Anexado a uma das praias mais agitadas
+                do litoral norte gaúcho, dos privilegiados atrativos culturais e naturais da região. Ainda mais, perto
+                da vida noturna com os melhores restaurantes e pubs e casas de shows, onde se encontram pessoas de todo
+                Brasil e de países vizinhos.
+            </p>
+        </section>
+
+        <section class="item mapa">
+            <h2>Nossa Localização</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.1129773013395!2d-50.123512999999996!3d-29.976183000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9518737328ce82d1%3A0x85e5dbe7bcb57227!2sHotel%20Paulinho!5e0!3m2!1spt-BR!2sbr!4v1744295778798!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="description">
+            <p>Com 13km de extensão, a praia do Imbé é de uma beleza singular. Ao longo da orla, a paisagem se modifica.
+               No centro, o calçadão da beira mar é uma opção para as caminhadas. Os quiosques já tem uma tradição 
+               de point para o fim de tarde. Ao norte da cidade estão as dunas, que acompanham uma boa parte do 
+               calçadão, indo até o limite da cidade, em Imara.</p>
+            </section>
+        <section class="item">
+            <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images/imbe1.png" alt="Praia de Imbé 1" class="active" loading="lazy">
+                        <img src="images/imbe2.png" alt="Praia de Imbé 2" loading="lazy">
+                        <img src="images/imbe3.png" alt="Praia de Imbé 3" loading="lazy">
+                        <img src="images/imbe4.png" alt="Praia de Imbé 4" loading="lazy">
+                        <img src="images/imbe5.png" alt="Praia de Imbé 5" loading="lazy">
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+                    <div class="carousel-indicators"></div>
+                </div>
+        </section>
+
+        <section class="distances">
+            <h2>Distâncias importantes</h2>
+            <ul>
+                <li><strong>Torres:</strong> 45 km</li>
+                <li><strong>Porto Alegre:</strong> 120 km</li>
+                <li><strong>Chuí:</strong> 550 km</li>
+                <li><strong>Uruguaiana:</strong> 700 km</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Hotel Paulinho. Todos os direitos reservados.</p>
+
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
