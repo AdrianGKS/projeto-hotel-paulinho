@@ -127,7 +127,7 @@ nav ul li {
 }
 
 /* Seções de texto antes do contato */
-.about, .distances {
+.about {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -136,30 +136,54 @@ nav ul li {
     max-width: 1150px;
 }
 
-.about h2, .distances h2 {
+.about h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.about p, .distances ul {
+.about p{
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
+.distances {
+    width: 100%;
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.distances h2 {
+    color: #004080;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
 .distances ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .distances li {
-    margin-bottom: 10px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .distances li strong {
-    font-weight: bold;
+    color: #004080;
+    display: block;
+    margin-bottom: 0.5rem;
 }
-
 /* Seção de Contato */
 #contato {
     padding: 20px;

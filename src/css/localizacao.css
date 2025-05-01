@@ -101,11 +101,8 @@ nav ul li {
 .description{
     width: 100%;
     text-align: justify;
-    font-size: 1.2em;
     color: #333;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-    line-height: 1.8;
+    padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -231,18 +228,6 @@ nav ul li {
     font-size: 1.1em;
     color: #666;
 }
-
-.description {
-    width: 100%;
-    text-align: justify;
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-    line-height: 1.8;
-}
-
-
 
 /* Estilo específico para a seção de distâncias */
 .distances {
